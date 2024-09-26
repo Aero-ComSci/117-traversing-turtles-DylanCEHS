@@ -15,8 +15,7 @@ Be sure include error checks and documentation on the read me to utilize the cla
 
 3. Action Items
 
-Step 17 Extend your program
-Step 18 
+In order to extend the code, I added more items to the list and changed the "for i in range(6)" to "for i in range(8)" so it would continue the pattern and extend the amount of sides the shape had in order to fully complete the pattern.
 
 ## Questions about the Activity as you work. 
 ```
