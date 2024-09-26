@@ -1,42 +1,42 @@
-#   a117_traversing_turtles.py
-#   Add code to make turtles move in a circle and change colors.
 import turtle as trtl
 
-class Turtle:
-  def __init__(self, shape, color):
-    self.turtle = trtl.Turtle(shape=shape)
-    self.turtle.penup
-    self.turtle.color(color)
-    self.turtle.pensize(2)
-   
-  def main(self, startx, starty, startDir, forwardLength):
-        self.turtle.goto(startx, starty)
-        self.turtle.pendown()
-        self.turtle.setheading(startDir)
-        self.turtle.right(45)
-        self.turtle.forward(forwardLength)
-
+# create an empty list of turtles
 my_turtles = []
 
 # use interesting shapes and colors
 turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic"]
 turtle_colors = ["red", "blue", "green", "orange", "purple", "gold"]
 
-for s in turtle_shapes:
-  t = trtl.Turtle(shape=s)
-  my_turtles.append(t)
+class TurtleCircle:
+    def __init__(self, shape, color):
+        self.turtle = trtl.Turtle(shape=shape)
+        self.turtle.penup()
+        self.turtle.color(color)
+        self.turtle.pensize(2)
+
+    def draw(self, startx, starty, startDir, forwardLength):
+        self.turtle.goto(startx, starty)
+        self.turtle.pendown()
+        self.turtle.setheading(startDir)
+        self.turtle.forward(forwardLength)
+        self.turtle.right(45)
+
+def main():
+    startx = 0
+    starty = 0
+    startDir = 0
+    forwardLength = 100
+
+    for i in range(6):
+        turtle_obj = TurtleCircle(turtle_shapes[i % len(turtle_shapes)], turtle_colors[i % len(turtle_colors)])
+        turtle_obj.draw(startx, starty, startDir, forwardLength)
+        startx, starty = turtle_obj.turtle.xcor(), turtle_obj.turtle.ycor()
+        startDir += 45  
+
+    wn = trtl.Screen()
+    wn.mainloop()
 
 
-startx = 0
-starty = 0
 
-for t in my_turtles:
-  t.goto(startx, starty)
-  t.right(45)     
-  t.forward(50)
-
-  startx = startx + 50
-  starty = starty + 50
-
-wn = trtl.Screen()
-wn.mainloop()
+if __name__ == "__main__":
+    main()
