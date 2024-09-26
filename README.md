@@ -1,17 +1,7 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/K3waziIG)
 # Activity 1.1.7
 
-* Utilize this read me to showcase the project.
-* Be sure to read and use the markdown here:
-[MarkDown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Stack Edit for markdown editing](https://stackedit.io)
-
 ---
-
-
-
-
-### [Book Link](https://pltw.read.inkling.com/a/b/5310c007377c46e28d745961310f0c2e/p/88fb6ad306ee44d0b055d9008ace8e80)
-Follow the instructions on the book
 
 2. Implement by creating a class that contains the following:
 
@@ -25,15 +15,21 @@ Be sure include error checks and documentation on the read me to utilize the cla
 
 3. Action Items
 
-Step 17 Extend your program
-Step 18 
+In order to extend the code, I added more items to the list and changed the "for i in range(6)" to "for i in range(8)" so it would continue the pattern and extend the amount of sides the shape had in order to fully complete the pattern.
 
 ## Questions about the Activity as you work. 
 ```
+What is the purpose of the class?
 
+What happens if their is a value error?
+
+What is the purpose of the __str__ method?
 ```
 #### Description Of The App 
 
-`
-# Include a video of the result of the code at speed 0 or Fast. Be sure to make it available for me to see.
+1.1.7 is an app that uses Turtle in order to create a colorful design using shapes and colors stored in a list to create a geometric shape. Using data structures in order to store the turtles and the colors and make it easier to append or remove items from the list without making to many changes. The __init__ method helped set up the turtle based on the data while pulling information out of the list and creating it with the correct shape and colors. The __str__ method is able to return the string with information about the turtle in order to draw the turtle with the information given.
+
+![ezgif com-video-to-gif-converter (2)](https://github.com/user-attachments/assets/d9e42062-d265-4348-8f73-83a9db80980b)
+
 ## For Regrades use the Feedback and @baeztheprog on your commit messages.
+
